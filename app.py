@@ -1,6 +1,7 @@
 # Importing libraries
 from flask import Flask, render_template, request
 import pickle
+import sklearn
 
 # Loading the mnb model and the tfidf model
 model = pickle.load(open('spam_mnb.pkl','rb'))
